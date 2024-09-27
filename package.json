@@ -1,0 +1,19 @@
+{
+  "name": "flux-replicate-cli",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generate Flux Images with Replicate from CLI or Web",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "webapp": "concurrently \"node server/index.js\" \"npx serve public -l 3000\"",
+    "dev": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "replicate": "*",
+    "commander": "^9.5.0",
+    "express": "^4.17.1",
+    "concurrently": "^8.2.0"
+  }
+}
